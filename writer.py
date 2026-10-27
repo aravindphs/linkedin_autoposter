@@ -1,6 +1,5 @@
 import json
 import os
-import time
 from pathlib import Path
 import requests
 import config
@@ -50,33 +49,30 @@ def _call(prompt):
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{config.GEMINI_MODEL}:generateContent"
     body = {
         "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"responseMimeType": "application/json", "temperature": 0.8},
+        "generationConfig": {
+            "responseMimeType": "application/json",
+            "thinkingConfig": {"thinkingLevel": os.getenv("GEMINI_THINKING", "low")},
+        },
     }
-    last = None
-    for attempt in range(4):
-        r = requests.post(url, headers={"x-goog-api-key": key}, json=body, timeout=120)
-        if r.status_code == 200:
-            text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
-            return json.loads(text)
-        last = f"{r.status_code} {r.text[:300]}"
-        time.sleep(5 * (attempt + 1))
-    raise RuntimeError(f"Gemini failed: {last}")
+    r = requests.post(url, headers={"x-goog-api-key": key}, json=body, timeout=(15, 180))
+    if r.status_code != 200:
+        raise RuntimeError(f"Gemini error {r.status_code}: {r.text[:600]}")
+    data = r.json()
+    try:
+        parts = data["candidates"][0]["content"]["parts"]
+        text = "".join(p.get("text", "") for p in parts if not p.get("thought"))
+    except (KeyError, IndexError):
+        raise RuntimeError(f"Unexpected Gemini response: {str(data)[:600]}")
+    return json.loads(text)
 
 
 def write_post(items, recent_titles, now):
     fmt = FORMATS[now.weekday()]
-    data = None
-    for _ in range(3):
-        try:
-            data = _call(_prompt(items, recent_titles, fmt))
-            if isinstance(data, list):
-                data = data[0]
-            if len(data.get("post", "")) > 200 and len(data.get("points", [])) >= 2:
-                break
-        except Exception as e:
-            print(f"[writer] retry: {e}")
-    else:
-        raise RuntimeError("Could not get a valid post from Gemini")
+    data = _call(_prompt(items, recent_titles, fmt))
+    if isinstance(data, list):
+        data = data[0]
+    if len(data.get("post", "")) < 200 or len(data.get("points", [])) < 2:
+        raise RuntimeError(f"Gemini returned an incomplete post: {str(data)[:400]}")
     pick = data.get("pick", -1)
     item = items[pick] if isinstance(pick, int) and 0 <= pick < len(items) else None
     data["post"] = data["post"].strip()[:2900]
