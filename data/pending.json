@@ -1,0 +1,9 @@
+{
+  "created": 1793165159.1709774,
+  "date": "2026-10-28",
+  "post": "You do not need complex machine learning to start working with data.\n\nMany college students think data analysis requires heavy math before writing a single line of code. It does not.\n\nYou can inspect any real-world dataset today with just Python and the pandas library in four quick steps.\n\nFirst, install pandas and import it:\nimport pandas as pd\n\nSecond, read any CSV file from your computer:\ndf = pd.read_csv('your_data.csv')\n\nThird, look at the first five rows to understand the structure:\nprint(df.head())\n\nFourth, run one single method to see counts, averages, minimums, and maximums across all numeric columns:\nprint(df.describe())\n\nThat is it. In four lines, you have an automated summary report of your data.\n\nTry this on your college project data or an open dataset tonight and see what patterns you spot.\n\nWhat dataset are you planning to analyze first?\n\n#Python #DataAnalysis #Pandas #CodingTips #TechCareers",
+  "headline": "Analyze Any CSV with 4 Lines of Pandas",
+  "alt": "A minimal flat illustration showing data rows transforming into summary charts.",
+  "link": "https://www.freecodecamp.org/news/how-to-build-a-simple-data-analyzer-in-python-with-pandas/",
+  "title": "How to Build a Simple Data Analyzer in Python with Pandas"
+}
