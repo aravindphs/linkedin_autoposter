@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "date": "2026-10-28",
+    "link": "https://www.freecodecamp.org/news/how-to-build-a-simple-data-analyzer-in-python-with-pandas/",
+    "title": "How to Build a Simple Data Analyzer in Python with Pandas",
+    "status": "posted"
+  }
+]
