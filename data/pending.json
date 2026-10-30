@@ -1,9 +1,0 @@
-{
-  "created": 1793345487.6916091,
-  "date": "2026-10-30",
-  "post": "Have you heard of MCP yet?\n\nModel Context Protocol is an open standard that lets LLMs connect directly to external tools, databases, and APIs.\n\nThink of it as giving your AI agent hands and feet to take real-world actions instead of just answering questions.\n\nWho should learn it?\n\nIf you are a fresher or a backend developer looking to stand out in interviews, this is for you. Companies are moving from basic chat bots to autonomous agents, and MCP is quickly becoming the standard plumbing.\n\nHow to get started?\n\nStart small. Do not jump into complex orchestration frameworks on day one.\n\nPick Python or TypeScript. Build a tiny MCP server that gives an LLM read-only access to a local SQLite database or a simple weather API.\n\nOnce you see the model fetch data on its own, study the security basics so your agent does not expose private data.\n\nHave you tried building with AI agents yet?\n\n#SoftwareEngineering #AIAgents #Python #WebDevelopment #CareerAdvice",
-  "headline": "What Is Model Context Protocol for AI?",
-  "alt": "An abstract illustration depicting interconnected technical modules linking to a central digital intelligence.",
-  "link": "https://www.freecodecamp.org/news/secure-your-ai-agents-free-model-context-protocol-mcp-security-course/",
-  "title": "Secure Your AI Agents – Free Model Context Protocol (MCP) Security Course"
-}
