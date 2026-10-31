@@ -1,9 +1,0 @@
-{
-  "created": 1793431221.8285794,
-  "date": "2026-10-31",
-  "post": "Are AI assistants making us faster, or just making us rusty?\n\nA recent discussion pointed out that AI isn't simply replacing engineering roles, it risks deskilling them if we stop understanding the fundamentals.\n\nWhen AI writes code or logs alerts, it is easy to become a passive spectator. But when production breaks, automated suggestions cannot replace real debugging intuition.\n\nHere is a 3-step study roadmap to protect your technical depth:\n\n1. Deep dive into system fundamentals. Understand OS concepts, networking, and database locks before relying on automated helpers.\n\n2. Debug by hand first. Spend 15 minutes tracing stack traces and logs independently before asking an AI tool for the solution.\n\n3. Build small services from scratch. Write real APIs and deploy them yourself so you know every failure point.\n\nUse AI to speed up boilerplate, not to outsource your critical thinking.\n\nHow do you ensure you are still building real problem-solving skills while using AI tools?\n\n#SoftwareEngineering #CareerGrowth #WebDevelopment #ProgrammingTips #TechCareers",
-  "headline": "How to Stay Sharp in the AI Era",
-  "alt": "Minimalist vector illustration depicting human cognitive skill linked to computer software systems.",
-  "link": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
-  "title": "AI isn't replacing SREs, it's deskilling them"
-}
