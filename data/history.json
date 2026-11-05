@@ -16,5 +16,11 @@
     "link": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
     "title": "AI isn't replacing SREs, it's deskilling them",
     "status": "posted"
+  },
+  {
+    "date": "2026-11-04",
+    "link": "https://www.freecodecamp.org/news/learn-vector-databases-for-beginners-embeddings-similarity-search-chromadb/",
+    "title": "Learn Vector Databases for Beginners – Embeddings, Similarity Search & ChromaDB",
+    "status": "posted"
   }
 ]

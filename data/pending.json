@@ -1,9 +1,0 @@
-{
-  "created": 1793778465.4348345,
-  "date": "2026-11-04",
-  "post": "Regular databases struggle when users misspell words or use synonyms.\n\nThat is because traditional SQL searches match exact text. Vector databases work differently.\n\nInstead of raw text, they store lists of numbers called embeddings. These numbers capture the actual meaning of a sentence.\n\nHere is a simple idea you can try today using a free tool like ChromaDB:\n\nTake three sentences: \"I love hot coffee\", \"I enjoy warm tea\", and \"The train is late\".\n\nWhen you convert these into embeddings and query \"morning beverage\", the vector database returns coffee and tea first. You never typed the word coffee in your query, but the database understands the context.\n\nThis exact concept is what powers modern AI chatbots, recommendation systems, and RAG apps.\n\nIf you want to build practical AI applications, do not just learn prompt writing. Learn how vector embeddings and similarity search work.\n\nHave you tried building with a vector database yet?\n\n#SoftwareEngineering #VectorDatabase #Python #MachineLearning #WebDevelopment",
-  "headline": "Search by meaning using vector databases",
-  "alt": "An abstract illustration representing vector embeddings clustering together in a multidimensional data space.",
-  "link": "https://www.freecodecamp.org/news/learn-vector-databases-for-beginners-embeddings-similarity-search-chromadb/",
-  "title": "Learn Vector Databases for Beginners – Embeddings, Similarity Search & ChromaDB"
-}
