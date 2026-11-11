@@ -1,9 +1,0 @@
-{
-  "created": 1794383973.9816365,
-  "date": "2026-11-11",
-  "post": "Are you tired of repeating the exact same instructions to your AI coding tools every single day?\n\nAI coding agents can now read your codebase, modify multiple files, and run terminal commands to solve tasks. But if they don't know your coding style or testing rules, they make silly mistakes.\n\nHere is a simple trick you can use today: add an AGENTS.md file to your project root.\n\nThink of AGENTS.md as a persistent README written specifically for AI agents. In this file, write down your core project context:\n\n- The tech stack and package manager you use\n- How to run tests and linters\n- Code formatting rules and naming conventions\n- Sensitive files or folders the agent must not touch\n\nWhen your AI agent opens your project, it reads this file first. You don't have to re-explain your setup in every single prompt.\n\nIt saves time and keeps your generated code clean.\n\nHave you tried using a dedicated instruction file for your AI tools yet?\n\n#SoftwareEngineering #DeveloperTools #CodingTips #Productivity #WebDevelopment",
-  "headline": "Make AI Coding Agents Smarter With AGENTS.md",
-  "alt": "A minimalist digital illustration depicting a document file guiding automated code blocks on a dark blue background.",
-  "link": "https://www.freecodecamp.org/news/learn-agentic-coding-with-codex-ai-coding-agents/",
-  "title": "Learn Agentic Coding with Codex & AI Coding Agents"
-}

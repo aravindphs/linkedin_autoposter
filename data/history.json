@@ -22,5 +22,11 @@
     "link": "https://www.freecodecamp.org/news/learn-vector-databases-for-beginners-embeddings-similarity-search-chromadb/",
     "title": "Learn Vector Databases for Beginners – Embeddings, Similarity Search & ChromaDB",
     "status": "posted"
+  },
+  {
+    "date": "2026-11-11",
+    "link": "https://www.freecodecamp.org/news/learn-agentic-coding-with-codex-ai-coding-agents/",
+    "title": "Learn Agentic Coding with Codex & AI Coding Agents",
+    "status": "posted"
   }
 ]
